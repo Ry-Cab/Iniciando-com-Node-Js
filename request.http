@@ -1,0 +1,29 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caderno",
+    "price": 16
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/0b13f9bd-ca83-4287-89d1-ff319e1baa51
+
+###
+
+PUT http://localhost:4002/products/ead7bd1d-81e2-4e81-b743-afa6e8b4b40f
+content-type: application/json
+
+{
+    "name": "Caderno emo gotico",
+    "price": 28
+}
+
+###
+
+DELETE http://localhost:4002/products/7e04d0ef-422b-49df-924a-e59b34f0b938
